@@ -3,7 +3,6 @@ export interface Event {
   slug: string;
   date: string;
   region: string;
-  troupe: string;
   description: string;
   image: string;
 }
