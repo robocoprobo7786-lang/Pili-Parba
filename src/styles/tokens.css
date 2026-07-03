@@ -1,0 +1,72 @@
+/* Pili Parba Design System Tokens */
+
+:root {
+  /* 
+    COLORS 
+    Ink-on-Bone & Bone-on-Ink Contrast: 
+    Ink (#1a1614) vs Bone (#f5f0e6) has a contrast ratio of ~14.3:1 
+    Passes WCAG AA (4.5:1) and AAA (7:1) easily.
+  */
+  --color-ink: #1a1614;          /* Deep warm charcoal-brown */
+  --color-ember: #c95e26;        /* Burnt turmeric-orange, slightly desaturated */
+  --color-maroon-dusk: #7a3028;  /* Deep brick-maroon */
+  --color-bone: #f5f0e6;         /* Warm off-white, slightly toasted */
+  --color-drumskin: #332b27;     /* Warm taupe-brown, for dark mode cards */
+  --color-moss: #4a684f;         /* Muted forest green, success states */
+
+  /* TYPOGRAPHY */
+  --font-display: 'Fraunces', 'Canela', 'Tiempos Headline', ui-serif, Georgia, serif;
+  --font-body: 'Inter', 'General Sans', 'Manrope', ui-sans-serif, system-ui, sans-serif;
+
+  /* SPACING */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.5rem;   /* 24px */
+  --space-6: 2rem;     /* 32px */
+  --space-7: 3rem;     /* 48px */
+  --space-8: 4rem;     /* 64px */
+  --space-9: 6rem;     /* 96px */
+  --space-10: 8rem;    /* 128px */
+
+  /* BORDER RADIUS */
+  --radius-sm: 8px;    /* 8px component radius */
+  --radius-md: 12px;   /* 12px component radius */
+  --radius-card: 16px; /* 16px card radius */
+}
+
+/* 
+  BREAKPOINTS REFERENCE (configured in tailwind.config.ts / @theme)
+  sm: 640px
+  md: 1024px
+  lg: 1440px
+*/
+
+/* Mapping to Tailwind v4 @theme for seamless integration if using CSS-only config */
+@theme {
+  --color-ink: var(--color-ink);
+  --color-ember: var(--color-ember);
+  --color-maroon-dusk: var(--color-maroon-dusk);
+  --color-bone: var(--color-bone);
+  --color-drumskin: var(--color-drumskin);
+  --color-moss: var(--color-moss);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+
+  --spacing-1: var(--space-1);
+  --spacing-2: var(--space-2);
+  --spacing-3: var(--space-3);
+  --spacing-4: var(--space-4);
+  --spacing-5: var(--space-5);
+  --spacing-6: var(--space-6);
+  --spacing-7: var(--space-7);
+  --spacing-8: var(--space-8);
+  --spacing-9: var(--space-9);
+  --spacing-10: var(--space-10);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-card: var(--radius-card);
+}
