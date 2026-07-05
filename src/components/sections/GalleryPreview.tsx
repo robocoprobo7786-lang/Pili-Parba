@@ -69,7 +69,7 @@ export const GalleryPreview = async () => {
               as="h2"
               className="text-ember text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight"
             >
-              Lorem Ipsum <span className="text-ember">Dolor</span>
+              Featured <span className="text-ember">Images</span>
             </Heading>
             <Text
               variant="body"
