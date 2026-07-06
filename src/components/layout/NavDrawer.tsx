@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Button } from '../ui/Button';
 import { cn } from '../../lib/utils/cn';
 
@@ -15,6 +16,7 @@ interface NavDrawerProps {
 }
 
 export const NavDrawer: React.FC<NavDrawerProps> = ({ links }) => {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const drawerRef = useRef<HTMLDivElement>(null);
@@ -27,6 +29,14 @@ export const NavDrawer: React.FC<NavDrawerProps> = ({ links }) => {
     setIsOpen(false);
     // Return focus to the trigger element when drawer closes
     triggerRef.current?.focus();
+  };
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href === '/' && pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    closeDrawer();
   };
 
   useEffect(() => {
@@ -68,6 +78,7 @@ export const NavDrawer: React.FC<NavDrawerProps> = ({ links }) => {
     
     // Prevent scroll on body
     const originalOverflow = document.body.style.overflow;
+    // eslint-disable-next-line
     document.body.style.overflow = 'hidden';
 
     // Shift focus to the close button inside the drawer on open
@@ -147,7 +158,7 @@ export const NavDrawer: React.FC<NavDrawerProps> = ({ links }) => {
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  onClick={closeDrawer}
+                  onClick={(e) => handleLinkClick(e, link.href)}
                   className="font-display text-3xl text-bone hover:text-ember transition-colors block py-2 px-6 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 rounded-sm"
                 >
                   {link.label}

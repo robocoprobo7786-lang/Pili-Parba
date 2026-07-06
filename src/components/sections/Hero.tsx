@@ -3,7 +3,6 @@ import React from 'react';
 export const Hero: React.FC = () => {
   return (
     <section
-      id="hero"
       className="relative w-full min-h-[100svh] -mt-24 pt-24 flex items-center justify-center overflow-hidden bg-ink"
       aria-label="Pili Parba Festival Hero"
     >

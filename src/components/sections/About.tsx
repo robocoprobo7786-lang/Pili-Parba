@@ -11,7 +11,7 @@ const BLUR_DATA_URL =
 
 export const About: React.FC = () => {
   return (
-    <Section background="bone" spacing="lg" id="about">
+    <Section background="bone" spacing="lg" id="history">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 

@@ -7,7 +7,7 @@ import { Text } from '../ui/Typography';
 const footerLinks = {
   explore: [
     { label: 'Events', href: '/events' },
-    { label: 'History', href: '/#about' },
+    { label: 'History', href: '/#history' },
     { label: 'Gallery', href: '/gallery' },
   ],
   community: [

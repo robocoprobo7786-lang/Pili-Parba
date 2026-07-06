@@ -1,26 +1,39 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { Container } from '../ui/Container';
 import { HeaderScrollWrapper } from './HeaderScrollWrapper';
 import { NavDrawer } from './NavDrawer';
 
 const navLinks = [
-  { label: 'Home', href: '/#hero' },
+  { label: 'Home', href: '/' },
   { label: 'Events', href: '/events' },
-  { label: 'History', href: '/#about' },
+  { label: 'History', href: '/#history' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Visit', href: '/visit' },
   { label: 'Journal', href: '/journal' },
 ];
 
 export const Header: React.FC = () => {
+  const pathname = usePathname();
+
+  const handleHomeClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href === '/' && pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <HeaderScrollWrapper>
       <Container className="flex items-center justify-between">
         {/* Brand Logo / Stage Label */}
         <Link
           href="/"
+          onClick={(e) => handleHomeClick(e, '/')}
           className="relative overflow-visible focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 rounded-sm transition-opacity hover:opacity-80 flex items-center"        >
           <Image
             src="/images/logo_new.png"
@@ -39,6 +52,7 @@ export const Header: React.FC = () => {
               <li key={link.label}>
                 <Link
                   href={link.href}
+                  onClick={(e) => handleHomeClick(e, link.href)}
                   className="font-body text-sm font-medium text-bone/90 hover:text-ember focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 rounded-sm transition-colors py-2 px-1"
                 >
                   {link.label}
