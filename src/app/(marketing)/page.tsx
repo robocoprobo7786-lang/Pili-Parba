@@ -6,11 +6,13 @@ import { GalleryPreview } from '../../components/sections/GalleryPreview';
 import { Sponsors } from '../../components/sections/Sponsors';
 
 export const metadata: Metadata = {
-  title: 'Pili Parba | Tiger Dance Festival of Tulunadu',
+  title: {
+    absolute: 'Pili Parba',
+  },
   description:
     'Experience Pili Vesha — the ancient Tiger Dance tradition of coastal Karnataka. Discover upcoming events, troupes, gallery highlights, and the living heritage of Tulunadu.',
   openGraph: {
-    title: 'Pili Parba | Tiger Dance Festival of Tulunadu',
+    title: 'Pili Parba',
     description:
       'Experience Pili Vesha — the ancient Tiger Dance tradition of coastal Karnataka. Discover upcoming events, troupes, gallery highlights, and the living heritage of Tulunadu.',
     type: 'website',

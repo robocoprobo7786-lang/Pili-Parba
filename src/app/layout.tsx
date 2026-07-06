@@ -21,11 +21,11 @@ const fontBody = Inter({
 export const metadata: Metadata = {
   title: {
     template: "%s | Pili Parba",
-    default: "Pili Parba | Tiger Dance of Tulunadu",
+    default: "Pili Parba",
   },
   description: "The official digital home of the Tiger Dance festival of Tulunadu. Experience the heat, color, and pride of Pili Vesha.",
   openGraph: {
-    title: "Pili Parba | Tiger Dance of Tulunadu",
+    title: "Pili Parba",
     description: "The official digital home of the Tiger Dance festival of Tulunadu. Experience the heat, color, and pride of Pili Vesha.",
     type: "website",
     locale: "en_IN",
