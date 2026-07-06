@@ -75,7 +75,7 @@ export const GalleryPreview = async () => {
               variant="body"
               className="text-bone/90 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+              Explore memorable moments from Kudla Pili Parba, featuring vibrant Hulivesha performances, dedicated artists, traditional percussion, enthusiastic crowds, and celebrations that reflect the enduring spirit of Tulunadu's cultural heritage.
             </Text>
           </Reveal>
         </div>
@@ -90,12 +90,12 @@ export const GalleryPreview = async () => {
             >
               <Link
                 href="/gallery"
-                aria-label={`View full gallery for ${item.troupe}`}
+                aria-label={`View full gallery for ${item.alt}`}
                 className="block relative w-full h-full overflow-hidden rounded-sm bg-drumskin/10 group hover:shadow-lg transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
               >
                 <Image
                   src={item.image}
-                  alt={`${item.alt} | ${item.troupe}, ${item.place} (${item.year}). Photo by ${item.photographer}`}
+                  alt={`${item.alt} (${item.year}). Photo by ${item.photographer}`}
                   fill
                   sizes={getImageSizes(index)}
                   className="object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.03]"
@@ -107,8 +107,8 @@ export const GalleryPreview = async () => {
                 {/* Subtle scrim for metadata contrast */}
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
                   <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                    <Heading level={3} as="h3" className="text-bone text-xl md:text-2xl font-bold mb-1">
-                      {item.troupe}
+                    <Heading level={3} as="h3" className="text-bone text-xl md:text-2xl font-bold mb-1 capitalize">
+                      {item.alt}
                     </Heading>
                     <Text variant="eyebrow" className="text-bone/90 text-xs tracking-wider uppercase">
                       {item.photographer} • {item.year}

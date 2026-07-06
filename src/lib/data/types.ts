@@ -11,8 +11,7 @@ export interface GalleryItem {
   id: string;
   image: string;
   alt: string;
-  troupe: string;
-  place: string;
+  troupe?: string;
   year: number;
   photographer: string;
 }

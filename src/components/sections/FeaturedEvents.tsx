@@ -22,7 +22,7 @@ export const FeaturedEvents = async () => {
               as="span"
               className="text-maroon-dusk mb-3 tracking-widest"
             >
-              Lorem Ipsum Dolor
+              Events
             </Text>
             <Heading
               level={2}
