@@ -14,42 +14,42 @@ export const About: React.FC = () => {
     <Section background="bone" spacing="lg" id="about">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
+
           {/* Text Content Column */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             <Reveal>
-              <Text 
-                variant="eyebrow" 
-                as="span" 
+              <Text
+                variant="eyebrow"
+                as="span"
                 className="text-maroon-dusk mb-3 tracking-widest"
               >
-                Lorem Ipsum Dolor
+                History
               </Text>
-              
-              <Heading 
-                level={2} 
-                as="h2" 
+
+              <Heading
+                level={2}
+                as="h2"
                 className="text-ink mb-6 text-3xl md:text-5xl font-bold tracking-tight"
               >
-                Lorem ipsum dolor sit amet
+                History of Pili Parba
               </Heading>
-              
+
               <div className="flex flex-col gap-6 max-w-2xl">
                 <Text variant="body" className="text-ink/80 text-base md:text-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Kudla Pili Parba was established to provide a dedicated platform where Hulivesha teams could gather, celebrate their shared heritage, and showcase their artistry through a professionally organized competition that honors Tulunadu's enduring cultural traditions together.
                 </Text>
-                
+
                 <Text variant="body" className="text-ink/80 text-base md:text-lg">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Unlike traditional street performances, participating teams perform on a common stage where experienced judges evaluate presentation, coordination, creativity, discipline, musical accompaniment, and overall execution throughout every competitive performance with fairness.
                 </Text>
-                
+
                 <Text variant="body" className="text-ink/80 text-base md:text-lg">
-                  Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida.
+                  Over successive editions, Kudla Pili Parba has become a celebrated gathering, bringing together performers, volunteers, and audiences while encouraging younger generations to appreciate, preserve, and proudly continue Hulivesha traditions.
                 </Text>
               </div>
             </Reveal>
           </div>
-          
+
           {/* Supporting Image Column */}
           <div className="lg:col-span-5 w-full flex justify-center">
             <div className="relative w-full max-w-md aspect-[4/5] rounded-md overflow-hidden shadow-lg border border-drumskin/10">
