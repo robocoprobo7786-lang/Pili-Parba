@@ -75,7 +75,7 @@ export const GalleryPreview = async () => {
               variant="body"
               className="text-bone/90 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto"
             >
-              Explore memorable moments from Kudla Pili Parba, featuring vibrant Hulivesha performances, dedicated artists, traditional percussion, enthusiastic crowds, and celebrations that reflect the enduring spirit of Tulunadu's cultural heritage.
+              {"Explore memorable moments from Kudla Pili Parba, featuring vibrant Hulivesha performances, dedicated artists, traditional percussion, enthusiastic crowds, and celebrations that reflect the enduring spirit of Tulunadu's cultural heritage."}
             </Text>
           </Reveal>
         </div>

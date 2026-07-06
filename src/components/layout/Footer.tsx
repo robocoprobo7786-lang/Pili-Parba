@@ -7,7 +7,7 @@ import { Text } from '../ui/Typography';
 const footerLinks = {
   explore: [
     { label: 'Events', href: '/events' },
-    { label: 'History', href: '/history' },
+    { label: 'History', href: '/#about' },
     { label: 'Gallery', href: '/gallery' },
   ],
   community: [
@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
                 Pili Parba
               </Link>
               <Text variant="body" className="text-bone/80 max-w-sm">
-                Kudla Pili Parba is an annual competition that brings together the best Pili teams from across Tulunadu to compete in a grand celebration of tradition, artistry, and devotion. Featuring spectacular performances, traditional drumming, elaborate tiger body painting, and cultural pride, the event showcases the very best of one of Coastal Karnataka's most iconic folk traditions.
+                {"Kudla Pili Parba is an annual competition that brings together the best Pili teams from across Tulunadu to compete in a grand celebration of tradition, artistry, and devotion. Featuring spectacular performances, traditional drumming, elaborate tiger body painting, and cultural pride, the event showcases the very best of one of Coastal Karnataka's most iconic folk traditions."}
               </Text>
             </div>
 

@@ -36,7 +36,7 @@ export const About: React.FC = () => {
 
               <div className="flex flex-col gap-6 max-w-2xl">
                 <Text variant="body" className="text-ink/80 text-base md:text-lg">
-                  Kudla Pili Parba was established to provide a dedicated platform where Hulivesha teams could gather, celebrate their shared heritage, and showcase their artistry through a professionally organized competition that honors Tulunadu's enduring cultural traditions together.
+                  {"Kudla Pili Parba was established to provide a dedicated platform where Hulivesha teams could gather, celebrate their shared heritage, and showcase their artistry through a professionally organized competition that honors Tulunadu's enduring cultural traditions together."}
                 </Text>
 
                 <Text variant="body" className="text-ink/80 text-base md:text-lg">

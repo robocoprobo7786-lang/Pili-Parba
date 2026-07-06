@@ -6,9 +6,9 @@ import { HeaderScrollWrapper } from './HeaderScrollWrapper';
 import { NavDrawer } from './NavDrawer';
 
 const navLinks = [
-  { label: 'Home', href: '/' },
+  { label: 'Home', href: '/#hero' },
   { label: 'Events', href: '/events' },
-  { label: 'History', href: '/history' },
+  { label: 'History', href: '/#about' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Visit', href: '/visit' },
   { label: 'Journal', href: '/journal' },

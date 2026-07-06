@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "./tokens.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-bone);
   color: var(--color-ink);
